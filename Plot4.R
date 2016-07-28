@@ -1,4 +1,5 @@
 # Please ensure the file household_power_consumption.txt is in your working directory
+# The zip file can be downloaded here: https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
 power_consumption <- read.table("household_power_consumption.txt",header = TRUE,na.strings = "?",sep = ";")
 power_consumption <- power_consumption[(power_consumption$Date=="1/2/2007" | power_consumption$Date=="2/2/2007" ), ]
 # convert the date and time variables to the DateTime Class  
